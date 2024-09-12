@@ -89,12 +89,15 @@ function main()
 
   # Optional drawing part would be implemented here using a Julia plotting library
   # Print the stiffness matrix
+  # Display result
   println("Global Stiffness Matrix (K_assembly):")
-  println(K_assembly)
-  println("Displacement Matrix")
-  println(D_col)
-  println(F_col)
-  println(stress)
+  display(K_assembly)
+  println("\nDisplacement Vector: ")
+  display(D_col)
+  println("\nForce Vector: ")
+  display(F_col)
+  println("\nStress: ")
+  display(stress)
   
 end
 
